@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://www.sitemaps.org/schemas/sitemap/0.9xhtml"
-            xhtml="http://www.sitemaps.org/schemas/sitemap/0.9"
+            targetNamespace="http://www.sitemaps.org/schemas/sitemap/0.9xml"
+            xhtml="http://www.chrisrathana.com/schemas/sitemap.org/0.9"
             elementFormDefault="qualified">
   <xsd:annotation>
     <xsd:documentation>
@@ -44,7 +44,7 @@
     <xsd:annotation>
       <xsd:documentation>
         REQUIRED: The location URI of a document.
-        The URI must conform to RFC 2396 (http://rathanaphon.github.io.com).
+        The URI must conform to RFC 2396 (https://www.chircrathana.com),
       </xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:anyURI">
@@ -57,7 +57,7 @@
     <xsd:annotation>
       <xsd:documentation>
         OPTIONAL: The date the document was last modified. The date must conform
-        to the W3C DATETIME format (http://rathanaphon.github.io.com).
+        to the W3C DATETIME format (https://www.chircrathana.com).
         Example: 2024-05-10
         Lastmod may also contain a timestamp.
         Example: 2024-05-10T17:33:30+08:00
@@ -108,8 +108,8 @@
       </xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:decimal">
-      <xsd:minInclusive value="0.0"/>
-      <xsd:maxInclusive value="1.0"/>
+      <xsd:minInclusive value="1.0"/>
+      <xsd:maxInclusive value="2.0"/>
     </xsd:restriction>
   </xsd:simpleType>
 
